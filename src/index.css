@@ -1,0 +1,26 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  /* background-color: rgb(15, 23, 42); */
+  background: rgb(12, 17, 31);
+  background: linear-gradient(
+    90deg,
+    rgba(12, 17, 31, 1) 0%,
+    rgba(22, 39, 58, 1) 30%,
+    rgba(22, 39, 58, 1) 65%,
+    rgba(12, 17, 31, 1) 100%
+  );
+}
+
+:root {
+  color: rgba(255, 255, 255, 0.87);
+}
+#root {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
