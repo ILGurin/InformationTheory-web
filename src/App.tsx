@@ -5,12 +5,13 @@ import Compression from './pages/Compression'
 import Encryption from './pages/Encryption'
 
 function App() {
+  const BASE_PATH = "/InformationTheory-web";
   return (
     <>
       <Routes>
-        <Route path='/' element={<MainPage/>}/>
-        <Route path='/compression' element={<Compression/>}/>
-        <Route path='/encryption' element={<Encryption/>} />
+        <Route path={`${BASE_PATH}/`} element={<MainPage/>}/>
+        <Route path={`${BASE_PATH}/compression`} element={<Compression/>}/>
+        <Route path={`${BASE_PATH}/encryption`} element={<Encryption/>} />
       </Routes>
     </>
   )

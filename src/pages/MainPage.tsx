@@ -8,6 +8,7 @@ const MainPage: React.FC = () => {
   const [word, setWord] = useState<string>("");
   const [entropyMetrics, setEntropyMetrics] = useState<EntropyMetrics>();
   const navigate = useNavigate();
+  const BASE_PATH = "/InformationTheory-web";
   const handleInputChange = (value: string) => {
     setWord(value.toUpperCase());
   };
@@ -47,7 +48,7 @@ const MainPage: React.FC = () => {
           min-w-[150px]"
           type="button"
           onClick={() => {
-            navigate("/compression");
+            navigate(`${BASE_PATH}/compression`);
           }}
         >
           Сжатие
@@ -59,7 +60,7 @@ const MainPage: React.FC = () => {
           min-w-[150px]"
           type="button"
           onClick={() => {
-            navigate("/encryption");
+            navigate(`${BASE_PATH}/encryption`);
           }}
         >
           Шифрование

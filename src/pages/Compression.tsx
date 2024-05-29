@@ -1,11 +1,10 @@
 import { useState } from "react";
-import CompressionService from "../services/CompressionService";
 import InputTextArea from "../components/InputTextArea";
 import Button from "../components/Button";
 
 const Compression: React.FC = () => {
   const [word, setWord] = useState<string>("");
-  const [result, setResult] = useState<string>("");
+  const [result] = useState<string>("");
   // const [isShannon, setIsShannon] = useState<boolean>(false);
 
   // const handleOptionChange = (e: React.ChangeEvent<HTMLInputElement>) => {
